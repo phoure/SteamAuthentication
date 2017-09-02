@@ -1,7 +1,11 @@
 <?php
+$file_name = "http://sanook.com";
+$file_content = file_get_contents($file_name);
+echo $file_content . "<br/>";
 
-$json = file_get_contents('http://sanook.com');
-$obj = json_decode($json);
-echo $obj->access_token.'ss';
-        
-        ?>
+/* Printing file content including HTML tags */
+$html_content = str_replace("<","&lt;",$file_content);
+$html_content = str_replace(">","&gt;",$html_content);
+$html_content = str_replace("\r\n","<br/>",$html_content);
+echo $html_content;
+?>
