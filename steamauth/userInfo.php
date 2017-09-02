@@ -5,7 +5,10 @@ if (empty($_SESSION['steam_uptodate']) or empty($_SESSION['steam_personaname']))
 	$content = json_decode($url, true);
 	$_SESSION['vv'] = $content;
 	print_r ($_SESSION['over']);
-	echo 'ssrr5ee444444444ee5';
+	print_r ($_SESSION['over1']);
+	print_r ($_SESSION['over2']);
+	print_r ($_SESSION['over3']);
+	echo 'aaaa';
 	$_SESSION['steam_steamid'] = $content['response']['players'][0]['steamid'];
 	$_SESSION['steam_communityvisibilitystate'] = $content['response']['players'][0]['communityvisibilitystate'];
 	$_SESSION['steam_profilestate'] = $content['response']['players'][0]['profilestate'];
