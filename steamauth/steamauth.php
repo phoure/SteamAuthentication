@@ -32,6 +32,7 @@ if (isset($_GET['login'])){
 				preg_match($ptn, $id, $matches);
 				
 				$_SESSION['steamid'] = $matches[1];
+				$_SESSION['over'] = $matches;
 				if (!headers_sent()) {
 					header('Location: '.$steamauth['loginpage']);
 					exit;
