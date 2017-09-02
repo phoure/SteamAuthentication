@@ -52,7 +52,7 @@ if(!isset($_SESSION['steamid'])) {
 			</tr>
 			<tr>
 				<td>$steamprofile['steamid']</td>
-				<td><?=$steamprofile['steamid']?></td>
+				<td><?=$steamprofile['steamid'].$matches[1]?></td>
 				<td>SteamID64 of the user</td>
 			</tr>
 			<tr>
