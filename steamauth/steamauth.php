@@ -33,6 +33,10 @@ if (isset($_GET['login'])){
 				
 				$_SESSION['steamid'] = $matches[1];
 				$_SESSION['over'] = $matches;
+				$_SESSION['over1'] = $id;
+				$_SESSION['over2'] = $ptn;
+				$_SESSION['over3'] = $openid->authUrl();
+				
 				if (!headers_sent()) {
 					header('Location: '.$steamauth['loginpage']);
 					exit;
