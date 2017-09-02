@@ -5,6 +5,7 @@ if (empty($_SESSION['steam_uptodate']) or empty($_SESSION['steam_personaname']))
 	$content = json_decode($url, true);
 	
 print_r ($content);
+	echo 'ss';
 	$_SESSION['steam_steamid'] = $content['response']['players'][0]['steamid'];
 	$_SESSION['steam_communityvisibilitystate'] = $content['response']['players'][0]['communityvisibilitystate'];
 	$_SESSION['steam_profilestate'] = $content['response']['players'][0]['profilestate'];
