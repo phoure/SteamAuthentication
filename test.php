@@ -1,5 +1,5 @@
 <?php
-$file_name = "http://sanook.com";
+$file_name = "http://steamcommunity.com/inventory/76561198192535217/730/2";
 $file_content = file_get_contents($file_name);
 echo $file_content . "<br/>";
 
