@@ -13,7 +13,7 @@ function debug($var){
      return $var;	
 }
 
-$file_name = "http://steamcommunity.com/inventory/76561198192535217/570/2?l=thai";
+$file_name = "http://steamcommunity.com/inventory/76561198192535217/570/2";
 $file_content = file_get_contents($file_name);
 $html_content = json_decode($html_content, true);
 
