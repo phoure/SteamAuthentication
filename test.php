@@ -14,6 +14,8 @@ function debug($var){
 }
 
 /* Printing file content including HTML tags */
+
+$file_name = "http://steamcommunity.com/inventory/76561198192535217/570/2";
 $html_content = str_replace("<","&lt;",$file_content);
 $html_content = str_replace(">","&gt;",$html_content);
 $html_content = str_replace("\r\n","<br/>",$html_content);
